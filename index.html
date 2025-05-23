@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Rápidas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <h1>Notícias Rápidas</h1>
+        <p>As principais manchetes do dia!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="menu">
+        <button onclick="mostrarSecao('tecnologia')">Tecnologia</button>
+        <button onclick="mostrarSecao('esportes')">Esportes</button>
+        <button onclick="mostrarSecao('entretenimento')">Entretenimento</button>
+        <button onclick="mostrarSecao('sobre')">Sobre</button>
+        <button onclick="mostrarSecao('contato')">Contato</button>
+    </nav>
+
+    <!-- Conteúdo das seções -->
+    <main class="conteudo">
+        <section id="tecnologia" class="secao">
+            <h2>Tecnologia</h2>
+            <article class="noticia">
+                <h3>Google distribui Gemini Pro para estudantes</h3>
+                <p>Google distribui 15 meses gratuitos para universitarios usarem Gemini Pro, 2tb de armazenamento e muito mais!</p>
+            </article>
+            <article class="noticia">
+                <h3>'Doom: The dark ages' recebe trailer de lançamento</h3>
+                <p>A famosa franquia Doom recebe mais um titulo incrivel acompanhado com um trailer.</p>
+            </article>
+        </section>
+
+        <section id="esportes" class="secao">
+            <h2>Esportes</h2>
+            <article class="noticia">
+                <h3>Eu não acompanho muitos esportes</h3>
+                <p>então peço perdão, não sei oque colocar aqui</p>
+        </section>
+
+        <section id="entretenimento" class="secao">
+            <h2>Entretenimento</h2>
+            <article class="noticia">
+                <h3>Lilo & Stitch chega ao cinema</h3>
+                <p>O filme mais aguardado Live Action está nos cinemas!</p>
+            </article>
+            <article class="noticia">
+                <h3>Relançamento de Star Wars chega ao cinema</h3>
+                <p>O famoso filme "A vingança dos Sith" chega o cinema com a trágica historia de Anakin.</p>
+            </article>
+        </section>
+
+        <section id="sobre" class="secao">
+            <h2>Sobre</h2>
+            <article class="noticia">
+                <h3>O que é o Notícias Rápidas?</h3>
+                <p>Este portal foi criado para trazer as principais manchetes do dia em um formato acessível</p>
+            </article>
+            <article class="noticia">
+                <h3>Nosso objetivo</h3>
+                <p>Informar de maneira clara, rápida e eficiente.</p>
+            </article>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+            <article>
+                <p>Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
+                <form id="form-contato">
+                    <div class="form-group">
+                        <input type="text" id="nome" aria-label="Seu nome" class="form-control" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" aria-label="Seu e-mail" class="form-control" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" aria-label="Sua mensagem" class="form-control" placeholder="Escreva sua mensagem aqui..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <div id="mensagem-sucesso" class="mensagem-sucesso"></div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
